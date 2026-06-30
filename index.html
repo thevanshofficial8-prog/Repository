@@ -1,20 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nova Finds</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Finds</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+text-align:center;
+}
+
+header{
+padding:40px 20px;
+background:#000;
+}
+
+h1{
+font-size:40px;
+color:gold;
+}
+
+p{
+margin-top:10px;
+color:#ccc;
+}
+
+.btn{
+display:inline-block;
+margin:15px;
+padding:15px 30px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#1b1b1b;
+padding:20px;
+border-radius:15px;
+}
+
+.card h2{
+color:gold;
+margin-bottom:10px;
+}
+
+.card a{
+display:inline-block;
+margin-top:10px;
+background:gold;
+padding:10px 20px;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+footer{
+padding:30px;
+color:#888;
+}
+</style>
+
 </head>
-<body style="font-family:Arial;text-align:center;background:#111;color:white;padding:40px;">
-  <h1>Nova Finds</h1>
-  <p>Premium T-Shirts, Watches, Jerseys & Trending Products</p>
 
-  <a href="https://www.instagram.com/nova.findsofficial?igsh=MWxneWhhdWU2c2M0Nw==" target="_blank">
-    Instagram
-  </a>
+<body>
 
-  <br><br>
+<header>
+<h1>Nova Finds</h1>
+<p>Premium T-Shirts • Watches • Jerseys • Trending Products</p>
 
-  <a href="https://wa.me/917838768616" target="_blank">
-    Order on WhatsApp
-  </a>
+<a class="btn" href="https://wa.me/917838768616">Order on WhatsApp</a>
+
+<a class="btn" href="https://www.instagram.com/nova.findsofficial">Instagram</a>
+</header>
+
+<section class="products">
+
+<div class="card">
+<h2>Premium T-Shirts</h2>
+<p>High Quality & Trending Collection</p>
+<a href="https://wa.me/917838768616">Buy Now</a>
+</div>
+
+<div class="card">
+<h2>Luxury Watches</h2>
+<p>Premium Quality Watches</p>
+<a href="https://wa.me/917838768616">Buy Now</a>
+</div>
+
+<div class="card">
+<h2>Sports Jerseys</h2>
+<p>Football & Cricket Jerseys</p>
+<a href="https://wa.me/917838768616">Buy Now</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 Nova Finds. All Rights Reserved.
+</footer>
+
 </body>
 </html>
