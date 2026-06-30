@@ -6,6 +6,7 @@
 <title>Nova Finds</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -14,110 +15,325 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
+background:#0f0f0f;
 color:white;
-text-align:center;
 }
 
 header{
-padding:40px 20px;
 background:#000;
+padding:20px;
+text-align:center;
+border-bottom:2px solid #22c55e;
+position:sticky;
+top:0;
+z-index:999;
 }
 
-h1{
-font-size:40px;
-color:gold;
+.logo{
+font-size:34px;
+font-weight:bold;
+color:#22c55e;
 }
 
-p{
-margin-top:10px;
+.tag{
 color:#ccc;
+margin-top:8px;
+}
+
+.buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-margin:15px;
-padding:15px 30px;
-background:gold;
-color:black;
+padding:14px 28px;
+border-radius:12px;
 text-decoration:none;
 font-weight:bold;
-border-radius:10px;
+transition:.3s;
+}
+
+.whatsapp{
+background:#22c55e;
+color:white;
+}
+
+.instagram{
+border:2px solid #22c55e;
+color:#22c55e;
+}
+
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+color:#22c55e;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+color:#ddd;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+line-height:1.8;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:30px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+padding:40px 20px;
 }
 
 .card{
-background:#1b1b1b;
+background:#181818;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 0 20px rgba(0,0,0,.5);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.content{
 padding:20px;
-border-radius:15px;
 }
 
-.card h2{
-color:gold;
-margin-bottom:10px;
+.price{
+font-size:30px;
+color:#22c55e;
+font-weight:bold;
+margin:15px 0;
 }
 
-.card a{
+.buy{
 display:inline-block;
-margin-top:10px;
-background:gold;
-padding:10px 20px;
-color:black;
+background:#22c55e;
+color:white;
+padding:12px 25px;
+border-radius:10px;
 text-decoration:none;
-border-radius:8px;
 font-weight:bold;
 }
 
 footer{
-padding:30px;
-color:#888;
+background:#000;
+padding:25px;
+text-align:center;
+margin-top:40px;
+color:#999;
 }
-</style>
 
+</style>
 </head>
 
 <body>
 
 <header>
-<h1>Nova Finds</h1>
-<p>Premium T-Shirts • Watches • Jerseys • Trending Products</p>
 
-<a class="btn" href="https://wa.me/917838768616">Order on WhatsApp</a>
+<div class="logo">
+Nova Finds
+</div>
 
-<a class="btn" href="https://www.instagram.com/nova.findsofficial">Instagram</a>
+<div class="tag">
+Trending Finds • Smart Choices
+</div>
+
+<div class="buttons">
+
+<a class="btn whatsapp"
+href="https://wa.me/917838768616">
+WhatsApp
+</a>
+
+<a class="btn instagram"
+href="https://instagram.com/nova.findsofficial">
+Instagram
+</a>
+
+</div>
+
 </header>
 
-<section class="products">
+<section class="hero">
 
-<div class="card">
-<h2>Premium T-Shirts</h2>
-<p>High Quality & Trending Collection</p>
-<a href="https://wa.me/917838768616">Buy Now</a>
-</div>
+<h1>Premium Collection</h1>
 
-<div class="card">
-<h2>Luxury Watches</h2>
-<p>Premium Quality Watches</p>
-<a href="https://wa.me/917838768616">Buy Now</a>
-</div>
-
-<div class="card">
-<h2>Sports Jerseys</h2>
-<p>Football & Cricket Jerseys</p>
-<a href="https://wa.me/917838768616">Buy Now</a>
-</div>
+<p>
+Discover Premium T-Shirts, Jerseys and Watches at the best prices with fast delivery across India.
+</p>
 
 </section>
 
+<section class="products">
+  <div class="card">
+
+<img src="images/tshirt-black.jpg" alt="Premium T-Shirt">
+
+<div class="content">
+
+<h2>Men's Cotton Blend Printed T-Shirt</h2>
+
+<p>
+Premium Cotton Blend • Regular Fit • Round Neck • Half Sleeve
+</p>
+
+<div class="price">₹500</div>
+
+<a class="buy"
+href="https://wa.me/917838768616?text=I%20want%20to%20buy%20the%20Men%27s%20Cotton%20Blend%20Printed%20T-Shirt">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/cr7-jersey.jpg" alt="CR7 Jersey">
+
+<div class="content">
+
+<h2>G.O.A.T CR7 Fan Jersey (2025)</h2>
+
+<p>
+Cristiano Ronaldo All Clubs Edition • Premium Football Fan Jersey
+</p>
+
+<div class="price">₹400</div>
+
+<a class="buy"
+href="https://wa.me/917838768616?text=I%20want%20to%20buy%20the%20CR7%20Jersey">
+Order Now
+</a>
+
+</div>
+<div class="card">
+
+<img src="images/silver-watch.jpg" alt="Skeleton Watch">
+
+<div class="content">
+
+<h2>Premium Designer Skeleton Watch</h2>
+
+<p>
+Luxury Skeleton Dial • Stainless Steel • Premium Finish
+</p>
+
+<div class="price">₹899</div>
+
+<a class="buy"
+href="https://wa.me/917838768616?text=Hi,%20I%20am%20interested%20in%20the%20Skeleton%20Watch%20(₹899).">
+Order Now
+</a>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/green-watch.jpg" alt="Green Watch">
+
+<div class="content">
+
+<h2>Premium Green Dial Watch</h2>
+
+<p>
+Stainless Steel • Quartz Movement • Date Display
+</p>
+
+<div class="price">₹599</div>
+
+<a class="buy"
+href="https://wa.me/917838768616?text=Hi,%20I%20am%20interested%20in%20the%20Green%20Dial%20Watch%20(₹599).">
+Order Now
+</a>
+
+</div>
+
+</div>  
+  </section>
+
+<section style="padding:40px 20px;background:#111;text-align:center;">
+
+<h2 style="color:#22c55e;font-size:32px;">
+Why Choose Nova Finds?
+</h2>
+
+<p style="max-width:700px;margin:auto;color:#ddd;line-height:1.8;padding-top:15px;">
+
+✔ Premium Quality Products<br><br>
+
+✔ Affordable Prices<br><br>
+
+✔ Fast WhatsApp Support<br><br>
+
+✔ Trending Fashion Collection<br><br>
+
+✔ Trusted Online Store
+
+</p>
+
+</section>
+
+
+<a href="https://wa.me/917838768616?text=Hi,%20I%20want%20to%20place%20an%20order"
+style="
+position:fixed;
+right:20px;
+bottom:20px;
+background:#22c55e;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
+z-index:9999;
+">
+💬 WhatsApp
+</a>
+
+
 <footer>
-© 2026 Nova Finds. All Rights Reserved.
+
+<h2 style="color:#22c55e;">Nova Finds</h2>
+
+<p>
+Instagram:
+<a href="https://instagram.com/nova.findsofficial"
+style="color:#22c55e;text-decoration:none;">
+@nova.findsofficial
+</a>
+</p>
+
+<p style="margin-top:15px;">
+© 2026 Nova Finds • All Rights Reserved
+</p>
+
 </footer>
 
 </body>
 </html>
+
+</div>
