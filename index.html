@@ -228,7 +228,18 @@ Discover Premium T-Shirts, Jerseys and Watches at the best prices with fast deli
 <section class="products">
   <div class="card">
 
-<img src="IMG_20260630_132451.png" alt="Premium T-Shirt">
+<div class="slider-box">
+<button class="prev">❮</button>
+
+<div class="slider">
+<img src="file_00000000f81c7207854c14efe436a2da.png" alt="Black T-Shirt">
+<img src="file_00000000735471f8ad77dfed37a4de8.png" alt="Beige T-Shirt">
+<img src="file_0000000049b471fbb1eebeac9173d939.png" alt="Purple T-Shirt">
+<img src="file_00000000880c7230a096aeb258aac1c1.png" alt="Green T-Shirt">
+</div>
+
+<button class="next">❯</button>
+</div>
 
 <div class="content">
 
@@ -375,7 +386,21 @@ style="color:#22c55e;text-decoration:none;">
 </p>
 
 </footer>
+<script>
+document.querySelectorAll(".slider-box").forEach(box=>{
+  const slider=box.querySelector(".slider");
+  const prev=box.querySelector(".prev");
+  const next=box.querySelector(".next");
 
+  prev.onclick=()=>{
+    slider.scrollBy({left:-slider.clientWidth,behavior:"smooth"});
+  };
+
+  next.onclick=()=>{
+    slider.scrollBy({left:slider.clientWidth,behavior:"smooth"});
+  };
+});
+</script>
 </body>
 </html>
 
